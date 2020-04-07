@@ -13,7 +13,7 @@ const BookContextProvider = ({ children }) => {
     setBooks([...books, {title, author, id: uuidv4()}])
   }
   const removeBook = id => {
-    setBooks([books.filter(book => book.id !== id)])
+    setBooks(books.filter(book => book.id !== id))
   }
 
   return (
